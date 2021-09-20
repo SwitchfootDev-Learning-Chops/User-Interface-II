@@ -1,1 +1,15 @@
-/* Add CSS styling here */
+body {
+    background-color: red;
+}
+
+.nav-container {
+    border: 1px solid black;
+}
+
+.aside-top-left {
+    border: 1px solid black;
+}
+
+.aside-top-right {
+    border: 1px solid black;
+}
