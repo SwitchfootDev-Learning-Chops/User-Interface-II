@@ -1,52 +1,226 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* My code below */
+
+
 body {
-    background-color: red;
+    display: block;
+    border: 1px solid blue;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* height: 100vh; */
+    line-height: 1;
+    background-color: gray;
+    font-size: 62.5%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .nav-container {
-    border: 1px solid black;
-    
-   
-}
-ul {
-    list-style-type: none;
+    border: 1px solid pink;
     display: flex;
-}
+    flex-direction: column;
+    width: 100%;
+    height: 150px;
+    margin-top: 5px;
 
-#nav-btn-1 {
-    border: 1px solid black;
-    width: 75px;
-    height: 35px;
     
    
 }
 
-#nav-btn-2 {
-    border: 1px solid black;
-    width: 75px;
-    height: 35px;
+h2 {
+    width: 20%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    margin-left:25px;;
+    border: 1px solid green;
+    font-size: 1.8rem;
 }
 
-#nav-btn-3 {
-    border: 1px solid black;
-    width: 75px;
-    height: 35px;
+ul {
+    display: flex;
+    width: 20%;
+    list-style-type: none;
+    margin-left: 40px;
+    border: 1px solid green
 }
 
-#nav-btn-4 {
-    border: 1px solid black;
-    width: 75px;
-    height: 35px;
+a {
+    text-decoration: none;
 }
 
+
+.nav-btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 9px;
+    /* margin-left: 3px; */
+    width: 55px;
+    height: 15px;
+    font-size: .7rem;
+    border: 1px solid black;
+    background-color: beige;
+    color: purple;
+}
+
+ .btn:hover {
+    background-color: white;
+}
+
+.asides {
+    display: flex;
+    width: 100%;
+   
+    border: 1px solid red;
+}
 .aside-top-left {
-    border: 1px solid black;
+    width: 500px;
+    height: 300px;
+    margin-left: 25px;
+    border: 1px solid red;
 }
 
 .aside-top-right {
+    width: 300px;
+    height: 300px;
+    margin-left: 90px;
+    border: 1px solid blue;
+}
+
+#name-title {
+   
+    width: 65%;
+    margin: 110px 0px 0px 60px;
+    font-family: 'Geneva', sans-serif;
+    font-size: 1rem;
+
+}
+
+#project-button{
+    width: 85px;
+    height: 30px;
+    font-size: .8rem;
+    margin-top: 25px;
+    margin-left: 60px;
+    padding: 3px 6px 3px 6px;
+    border: 1px solid green;
+    
+}
+
+#intro-blurb {
+    
+    width: 75%;
+    height: 100px;
+    margin-top: 25px;
+    margin-left: 55px;
+    font-family: 'Tahoma', sans-serif;
+    font-weight: lighter;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    
+}  
+
+.section-container-top , 
+.section-container-bottom {
     border: 1px solid black;
+    display: flex;
+    justify-content: flex-start;
+    width: 95%;
+    height: 22%;
+    margin-left:25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    
+}
+
+.project-box {
+    /* display: flex; */
+    /* flex-direction: column;  */
+    display: inline;
+    float: right;
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    margin: 2px;
+}
+
+
+#project1, #project2, #project3, #project4,
+#project5, #project6, #project7, #project8 {
+    border: 1px solid orange;
+    margin: 2px;
+    text-align: center;
+    font-size: .8rem;
 }
 
 .footer-container {
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    padding: 20px;
+    margin: 15px;
+    height: 120px;
+    border: 1px solid purple;
 }
 
+h4 {
+    font-size: 1.3rem;
+    margin-top: 25px;
+    align-self: center;
+}
+
+#footer-contact {
+    width: 90px;
+    margin-top: 20px;
+    align-self: center;
+    
+}
+
+
+/* responsive design for media */
